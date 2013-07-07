@@ -4,10 +4,10 @@
     <mapcanvas>
         <units>meters</units>
         <extent>
-            <xmin>390622.895070</xmin>
-            <ymin>131963.840148</ymin>
-            <xmax>405974.324492</xmax>
-            <ymax>141561.544029</ymax>
+            <xmin>396703.758280</xmin>
+            <ymin>132109.074419</ymin>
+            <xmax>401901.598484</xmax>
+            <ymax>135358.760798</ymax>
         </extent>
         <projections>1</projections>
         <destinationsrs>
@@ -238,10 +238,10 @@
             <vectorjoins/>
             <renderer-v2 symbollevels="0" type="singleSymbol">
                 <symbols>
-                    <symbol outputUnit="MM" alpha="1" type="fill" name="0">
+                    <symbol outputUnit="MM" alpha="0.796078" type="fill" name="0">
                         <layer pass="0" class="SimpleFill" locked="0">
-                            <prop k="color" v="0,131,179,255"/>
-                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="color" v="0,131,179,203"/>
+                            <prop k="color_border" v="0,0,0,203"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="style" v="solid"/>
                             <prop k="style_border" v="no"/>
@@ -306,7 +306,7 @@
             <vectorjoins/>
             <renderer-v2 symbollevels="0" type="singleSymbol">
                 <symbols>
-                    <symbol outputUnit="MapUnit" alpha="1" type="line" name="0">
+                    <symbol outputUnit="MapUnit" alpha="0.796078" type="line" name="0">
                         <layer pass="0" class="SimpleLine" locked="0">
                             <prop k="capstyle" v="square"/>
                             <prop k="color" v="0,131,179,255"/>
@@ -376,10 +376,10 @@
             <vectorjoins/>
             <renderer-v2 symbollevels="0" type="singleSymbol">
                 <symbols>
-                    <symbol outputUnit="MM" alpha="1" type="fill" name="0">
+                    <symbol outputUnit="MM" alpha="0.698039" type="fill" name="0">
                         <layer pass="0" class="SimpleFill" locked="0">
-                            <prop k="color" v="2,179,167,255"/>
-                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="color" v="2,179,167,178"/>
+                            <prop k="color_border" v="0,0,0,178"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="style" v="solid"/>
                             <prop k="style_border" v="no"/>
@@ -875,7 +875,13 @@
             <transparencyLevelInt>255</transparencyLevelInt>
             <provider encoding="UTF-8">ogr</provider>
             <vectorjoins/>
-            <renderer-v2 symbollevels="0" type="singleSymbol">
+            <renderer-v2 attr="DESC_" symbollevels="0" type="categorizedSymbol">
+                <categories>
+                    <category symbol="0" value="Stream" label=""/>
+                    <category symbol="1" value="Dock or Pier" label=""/>
+                    <category symbol="2" value="Seawall" label=""/>
+                    <category symbol="3" value="Jetty" label=""/>
+                </categories>
                 <symbols>
                     <symbol outputUnit="MapUnit" alpha="1" type="line" name="0">
                         <layer pass="0" class="SimpleLine" locked="0">
@@ -886,7 +892,43 @@
                             <prop k="offset" v="0"/>
                             <prop k="penstyle" v="solid"/>
                             <prop k="use_custom_dash" v="0"/>
-                            <prop k="width" v="15"/>
+                            <prop k="width" v="10"/>
+                        </layer>
+                    </symbol>
+                    <symbol outputUnit="MM" alpha="1" type="line" name="1">
+                        <layer pass="0" class="SimpleLine" locked="0">
+                            <prop k="capstyle" v="square"/>
+                            <prop k="color" v="230,230,230,255"/>
+                            <prop k="customdash" v="5;2"/>
+                            <prop k="joinstyle" v="bevel"/>
+                            <prop k="offset" v="0"/>
+                            <prop k="penstyle" v="solid"/>
+                            <prop k="use_custom_dash" v="0"/>
+                            <prop k="width" v="0.26"/>
+                        </layer>
+                    </symbol>
+                    <symbol outputUnit="MM" alpha="1" type="line" name="2">
+                        <layer pass="0" class="SimpleLine" locked="0">
+                            <prop k="capstyle" v="square"/>
+                            <prop k="color" v="230,230,230,255"/>
+                            <prop k="customdash" v="5;2"/>
+                            <prop k="joinstyle" v="bevel"/>
+                            <prop k="offset" v="0"/>
+                            <prop k="penstyle" v="solid"/>
+                            <prop k="use_custom_dash" v="0"/>
+                            <prop k="width" v="0.26"/>
+                        </layer>
+                    </symbol>
+                    <symbol outputUnit="MM" alpha="1" type="line" name="3">
+                        <layer pass="0" class="SimpleLine" locked="0">
+                            <prop k="capstyle" v="square"/>
+                            <prop k="color" v="230,230,230,255"/>
+                            <prop k="customdash" v="5;2"/>
+                            <prop k="joinstyle" v="bevel"/>
+                            <prop k="offset" v="0"/>
+                            <prop k="penstyle" v="solid"/>
+                            <prop k="use_custom_dash" v="0"/>
+                            <prop k="width" v="0.26"/>
                         </layer>
                     </symbol>
                 </symbols>
@@ -1096,24 +1138,23 @@
             <renderer-v2 symbollevels="0" type="singleSymbol">
                 <symbols>
                     <symbol outputUnit="MM" alpha="1" type="fill" name="0">
-                        <layer pass="0" class="CentroidFill" locked="0"/>
                         <layer pass="0" class="SimpleFill" locked="0">
-                            <prop k="color" v="251,246,255,255"/>
+                            <prop k="color" v="248,240,255,255"/>
                             <prop k="color_border" v="0,0,0,255"/>
                             <prop k="offset" v="0,0"/>
                             <prop k="style" v="solid"/>
                             <prop k="style_border" v="no"/>
                             <prop k="width_border" v="0.26"/>
                         </layer>
-                    </symbol>
-                    <symbol outputUnit="MM" alpha="1" type="marker" name="@0@0">
-                        <layer pass="0" class="SimpleMarker" locked="0">
-                            <prop k="angle" v="0"/>
-                            <prop k="color" v="255,0,0,255"/>
-                            <prop k="color_border" v="0,0,0,255"/>
-                            <prop k="name" v="circle"/>
-                            <prop k="offset" v="0,0"/>
-                            <prop k="size" v="2"/>
+                        <layer pass="0" class="SimpleLine" locked="0">
+                            <prop k="capstyle" v="square"/>
+                            <prop k="color" v="208,206,246,255"/>
+                            <prop k="customdash" v="5;2"/>
+                            <prop k="joinstyle" v="bevel"/>
+                            <prop k="offset" v="0"/>
+                            <prop k="penstyle" v="dot"/>
+                            <prop k="use_custom_dash" v="0"/>
+                            <prop k="width" v="0.8"/>
                         </layer>
                     </symbol>
                 </symbols>
