@@ -3,6 +3,8 @@ dc-landscape
 
 Maps and spatial data for Washington, D.C. landscape history. 
 
+For narrative updates, see [David Ramos's blog](http://imaginaryterrain.com/blog).
+
 ## Boschke Map datasets
 
 Several datasets are digitized from Albert Boschke's 1856–1858 survey and map of the District of Columbia.
