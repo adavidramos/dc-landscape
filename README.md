@@ -31,5 +31,8 @@ Williams, Garnett P. _Washington, D.C.'s Vanishing Springs and Waterways / Geolo
 
 ## Contact
 
-[David Ramos](http://imaginaryterrain.com)
-r@imaginaryterrain.com
+[David Ramos](http://imaginaryterrain.com)  
+r@imaginaryterrain.com  
+[@imagineterrain](https://twitter.com/imagineterrain)
+
+
