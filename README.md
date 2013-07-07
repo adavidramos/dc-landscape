@@ -7,7 +7,7 @@ For narrative updates, see [David Ramos's blog](http://imaginaryterrain.com/blog
 
 ## Boschke Map datasets
 
-Several datasets are digitized from Albert Boschke's 1856–1858 survey and map of the District of Columbia.
+Several datasets are digitized from Albert Boschke's 1856–1859 survey and map of the District of Columbia.
 
 *data/boschke_1857/hydrography*: streams, represented as lines.
 
