@@ -4,10 +4,10 @@
     <mapcanvas>
         <units>meters</units>
         <extent>
-            <xmin>397346.762541</xmin>
-            <ymin>131891.930124</ymin>
-            <xmax>401680.569385</xmax>
-            <ymax>134601.423398</ymax>
+            <xmin>397291.383351</xmin>
+            <ymin>135716.868901</ymin>
+            <xmax>398167.617131</xmax>
+            <ymax>136264.661639</ymax>
         </extent>
         <projections>1</projections>
         <destinationsrs>
@@ -25,6 +25,11 @@
     </mapcanvas>
     <legend updateDrawingOrder="true">
         <legendgroup open="true" checked="Qt::Checked" name="Boschke 1859">
+            <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="area names" showFeatureCount="0">
+                <filegroup open="false" hidden="false">
+                    <legendlayerfile isInOverview="0" layerid="hydrologic_area_names20130808110329135" visible="1"/>
+                </filegroup>
+            </legendlayer>
             <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="names" showFeatureCount="0">
                 <filegroup open="true" hidden="false">
                     <legendlayerfile isInOverview="0" layerid="hydrologic_names20130804123516020" visible="1"/>
@@ -40,11 +45,6 @@
                     <legendlayerfile isInOverview="0" layerid="Boschke_1859_marsh20130706215433395" visible="1"/>
                 </filegroup>
             </legendlayer>
-            <legendlayer drawingOrder="2" open="false" checked="Qt::Checked" name="water" showFeatureCount="0">
-                <filegroup open="false" hidden="false">
-                    <legendlayerfile isInOverview="0" layerid="Boschke_1857_canal_qgs20130706213057265" visible="1"/>
-                </filegroup>
-            </legendlayer>
             <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="tidal_flat" showFeatureCount="0">
                 <filegroup open="false" hidden="false">
                     <legendlayerfile isInOverview="0" layerid="tidal_flat20130806140325170" visible="1"/>
@@ -53,6 +53,11 @@
             <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="river" showFeatureCount="0">
                 <filegroup open="false" hidden="false">
                     <legendlayerfile isInOverview="0" layerid="river20130806222322337" visible="1"/>
+                </filegroup>
+            </legendlayer>
+            <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="water" showFeatureCount="0">
+                <filegroup open="false" hidden="false">
+                    <legendlayerfile isInOverview="0" layerid="water20130808123702525" visible="1"/>
                 </filegroup>
             </legendlayer>
         </legendgroup>
@@ -155,7 +160,7 @@
             </filegroup>
         </legendlayer>
     </legend>
-    <projectlayers layercount="29">
+    <projectlayers layercount="30">
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>BldgPly20130706213242511</id>
             <datasource>../../external data/DC GIS/BldgPly/BldgPly.shp</datasource>
@@ -224,75 +229,6 @@
                 <edittype type="0" name="GIS_ID"/>
                 <edittype type="0" name="SHAPE_AREA"/>
                 <edittype type="0" name="SHAPE_LEN"/>
-            </edittypes>
-            <editform>.</editform>
-            <editforminit></editforminit>
-            <annotationform>.</annotationform>
-            <attributeactions/>
-        </maplayer>
-        <maplayer minimumScale="0" maximumScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="0">
-            <id>Boschke_1857_canal_qgs20130706213057265</id>
-            <datasource>../data/boschke_1857/water.qgs.shp</datasource>
-            <title></title>
-            <abstract></abstract>
-            <layername>water</layername>
-            <srs>
-                <spatialrefsys>
-                    <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
-                    <srsid>3452</srsid>
-                    <srid>4326</srid>
-                    <authid>EPSG:4326</authid>
-                    <description>WGS 84</description>
-                    <projectionacronym>longlat</projectionacronym>
-                    <ellipsoidacronym>WGS84</ellipsoidacronym>
-                    <geographicflag>true</geographicflag>
-                </spatialrefsys>
-            </srs>
-            <transparencyLevelInt>255</transparencyLevelInt>
-            <provider encoding="UTF-8">ogr</provider>
-            <vectorjoins/>
-            <renderer-v2 symbollevels="0" type="singleSymbol">
-                <symbols>
-                    <symbol outputUnit="MM" alpha="0.796078" type="fill" name="0">
-                        <layer pass="0" class="SimpleFill" locked="0">
-                            <prop k="color" v="0,131,179,203"/>
-                            <prop k="color_border" v="0,0,0,203"/>
-                            <prop k="offset" v="0,0"/>
-                            <prop k="style" v="solid"/>
-                            <prop k="style_border" v="no"/>
-                            <prop k="width_border" v="0.26"/>
-                        </layer>
-                    </symbol>
-                </symbols>
-                <rotation field=""/>
-                <sizescale field=""/>
-            </renderer-v2>
-            <customproperties/>
-            <displayfield>id</displayfield>
-            <label>0</label>
-            <labelattributes>
-                <label fieldname="" text="Label"/>
-                <family fieldname="" name="Lucida Grande"/>
-                <size fieldname="" units="pt" value="12"/>
-                <bold fieldname="" on="0"/>
-                <italic fieldname="" on="0"/>
-                <underline fieldname="" on="0"/>
-                <strikeout fieldname="" on="0"/>
-                <color fieldname="" red="0" blue="0" green="0"/>
-                <x fieldname=""/>
-                <y fieldname=""/>
-                <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
-                <angle fieldname="" value="0" auto="0"/>
-                <alignment fieldname="" value="center"/>
-                <buffercolor fieldname="" red="255" blue="255" green="255"/>
-                <buffersize fieldname="" units="pt" value="1"/>
-                <bufferenabled fieldname="" on=""/>
-                <multilineenabled fieldname="" on=""/>
-                <selectedonly on=""/>
-            </labelattributes>
-            <edittypes>
-                <edittype type="0" name="id"/>
-                <edittype type="0" name="name"/>
             </edittypes>
             <editform>.</editform>
             <editforminit></editforminit>
@@ -2131,6 +2067,77 @@
             </rasterproperties>
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="Line" type="vector" hasScaleBasedVisibilityFlag="0">
+            <id>hydrologic_area_names20130808110329135</id>
+            <datasource>../data/boschke_1857/hydrologic_area_names.shp</datasource>
+            <title></title>
+            <abstract></abstract>
+            <layername>area names</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+                    <srsid>3452</srsid>
+                    <srid>4326</srid>
+                    <authid>EPSG:4326</authid>
+                    <description>WGS 84</description>
+                    <projectionacronym>longlat</projectionacronym>
+                    <ellipsoidacronym>WGS84</ellipsoidacronym>
+                    <geographicflag>true</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <transparencyLevelInt>255</transparencyLevelInt>
+            <provider encoding="UTF-8">ogr</provider>
+            <vectorjoins/>
+            <renderer-v2 symbollevels="0" type="singleSymbol">
+                <symbols>
+                    <symbol outputUnit="MM" alpha="1" type="line" name="0">
+                        <layer pass="0" class="SimpleLine" locked="0">
+                            <prop k="capstyle" v="square"/>
+                            <prop k="color" v="132,121,217,255"/>
+                            <prop k="customdash" v="5;2"/>
+                            <prop k="joinstyle" v="bevel"/>
+                            <prop k="offset" v="0"/>
+                            <prop k="penstyle" v="solid"/>
+                            <prop k="use_custom_dash" v="0"/>
+                            <prop k="width" v="0.26"/>
+                        </layer>
+                    </symbol>
+                </symbols>
+                <rotation field=""/>
+                <sizescale field=""/>
+            </renderer-v2>
+            <customproperties/>
+            <displayfield>name</displayfield>
+            <label>0</label>
+            <labelattributes>
+                <label fieldname="" text="Label"/>
+                <family fieldname="" name="Lucida Grande"/>
+                <size fieldname="" units="pt" value="12"/>
+                <bold fieldname="" on="0"/>
+                <italic fieldname="" on="0"/>
+                <underline fieldname="" on="0"/>
+                <strikeout fieldname="" on="0"/>
+                <color fieldname="" red="0" blue="0" green="0"/>
+                <x fieldname=""/>
+                <y fieldname=""/>
+                <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+                <angle fieldname="" value="0" auto="0"/>
+                <alignment fieldname="" value="center"/>
+                <buffercolor fieldname="" red="255" blue="255" green="255"/>
+                <buffersize fieldname="" units="pt" value="1"/>
+                <bufferenabled fieldname="" on=""/>
+                <multilineenabled fieldname="" on=""/>
+                <selectedonly on=""/>
+            </labelattributes>
+            <edittypes>
+                <edittype type="0" name="id"/>
+                <edittype type="0" name="name"/>
+            </edittypes>
+            <editform>.</editform>
+            <editforminit></editforminit>
+            <annotationform>.</annotationform>
+            <attributeactions/>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" geometry="Line" type="vector" hasScaleBasedVisibilityFlag="0">
             <id>hydrologic_names20130804123516020</id>
             <datasource>../data/hydrologic_names.shp</datasource>
             <title></title>
@@ -2331,6 +2338,75 @@
             <editform>.</editform>
             <editforminit></editforminit>
             <annotationform>.</annotationform>
+            <attributeactions/>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" geometry="Polygon" type="vector" hasScaleBasedVisibilityFlag="0">
+            <id>water20130808123702525</id>
+            <datasource>../data/boschke_1859/water.shp</datasource>
+            <title></title>
+            <abstract></abstract>
+            <layername>water</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+                    <srsid>3452</srsid>
+                    <srid>4326</srid>
+                    <authid>EPSG:4326</authid>
+                    <description>WGS 84</description>
+                    <projectionacronym>longlat</projectionacronym>
+                    <ellipsoidacronym>WGS84</ellipsoidacronym>
+                    <geographicflag>true</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <transparencyLevelInt>255</transparencyLevelInt>
+            <provider encoding="UTF-8">ogr</provider>
+            <vectorjoins/>
+            <renderer-v2 symbollevels="0" type="singleSymbol">
+                <symbols>
+                    <symbol outputUnit="MM" alpha="1" type="fill" name="0">
+                        <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="color" v="121,158,217,255"/>
+                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="style" v="solid"/>
+                            <prop k="style_border" v="solid"/>
+                            <prop k="width_border" v="0.26"/>
+                        </layer>
+                    </symbol>
+                </symbols>
+                <rotation field=""/>
+                <sizescale field=""/>
+            </renderer-v2>
+            <customproperties/>
+            <displayfield>name</displayfield>
+            <label>0</label>
+            <labelattributes>
+                <label fieldname="" text="Label"/>
+                <family fieldname="" name="Lucida Grande"/>
+                <size fieldname="" units="pt" value="12"/>
+                <bold fieldname="" on="0"/>
+                <italic fieldname="" on="0"/>
+                <underline fieldname="" on="0"/>
+                <strikeout fieldname="" on="0"/>
+                <color fieldname="" red="0" blue="0" green="0"/>
+                <x fieldname=""/>
+                <y fieldname=""/>
+                <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+                <angle fieldname="" value="0" auto="0"/>
+                <alignment fieldname="" value="center"/>
+                <buffercolor fieldname="" red="255" blue="255" green="255"/>
+                <buffersize fieldname="" units="pt" value="1"/>
+                <bufferenabled fieldname="" on=""/>
+                <multilineenabled fieldname="" on=""/>
+                <selectedonly on=""/>
+            </labelattributes>
+            <edittypes>
+                <edittype type="0" name="id"/>
+                <edittype type="0" name="name"/>
+            </edittypes>
+            <editform></editform>
+            <editforminit></editforminit>
+            <annotationform></annotationform>
             <attributeactions/>
         </maplayer>
     </projectlayers>
