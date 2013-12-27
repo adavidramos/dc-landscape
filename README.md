@@ -15,7 +15,11 @@ Several datasets are digitized from Albert Boschke's 1856–1859 survey and map 
 
 *data/boschke_1857/marsh*: areas indicated as marsh on the source map. The engravers distinguish between marsh and tidal flats.
 
-*data/boschke_1857/boschke 1857 georef*: a scanned copy of the Boschke map, georeferenced and stored in WGS84.
+## Raster data
+
+Raster data are not tracked in Git.
+
+*raster_data/boschke_1857/boschke 1857 georef*: a scanned copy of the Boschke map, georeferenced as WGS84.
 
 ## Other datasets
 
